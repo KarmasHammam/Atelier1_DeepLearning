@@ -1,0 +1,61 @@
+{
+  "task": "classification",
+  "mode": "full",
+  "seed": 42,
+  "rows_raw": 10000,
+  "rows_prepared": 10000,
+  "split_sizes": {
+    "train": 7000,
+    "validation": 1500,
+    "test": 1500
+  },
+  "best_parameters_cv": {
+    "net__epochs": 80,
+    "net__hidden": [
+      64,
+      32
+    ],
+    "net__lr": 0.01,
+    "net__optimizer": "adam"
+  },
+  "best_score_cv": 0.5578582484804687,
+  "cv_scoring": "f1_macro",
+  "cv_folds": 3,
+  "grid_candidates": 9,
+  "selected_on_validation": "dropout",
+  "reference": {
+    "train": {
+      "accuracy": 0.9651428571428572,
+      "balanced_accuracy": 0.16666666666666666,
+      "f1_macro": 0.1637103809246874,
+      "f1_weighted": 0.9480234287375898
+    },
+    "validation": {
+      "accuracy": 0.9653333333333334,
+      "balanced_accuracy": 0.16666666666666666,
+      "f1_macro": 0.16372682044323836,
+      "f1_weighted": 0.9483057440072364
+    },
+    "test": {
+      "accuracy": 0.9653333333333334,
+      "balanced_accuracy": 0.16666666666666666,
+      "f1_macro": 0.16372682044323836,
+      "f1_weighted": 0.9483057440072364
+    }
+  },
+  "sources": {
+    "prices-split-adjusted.csv": {
+      "kaggle": "https://www.kaggle.com/datasets/dgawlik/nyse",
+      "url": "https://raw.githubusercontent.com/griffinschwab/NYSE-ML-Project/dfd0e9cf577d6fa2271957ab470c2c81c654bc6b/data/raw/prices-split-adjusted.csv",
+      "sha256": "0a8e0505591c8ae8c545d6d9e7bb69735c18568745ef848bf4d01e1afd871ec5"
+    },
+    "predictive_maintenance.csv": {
+      "kaggle": "https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification",
+      "url": "https://raw.githubusercontent.com/beratcmn/machine-maintenance-prediction/9683ce9ccd58e29fb4ef39d116b16416606a2190/data/predictive_maintenance.csv",
+      "sha256": "ba1eb264c69e69258acb2df6991055afc93092b1be436a29d2e6037b0ebd80cc"
+    }
+  },
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "sklearn": "1.8.0"
+}

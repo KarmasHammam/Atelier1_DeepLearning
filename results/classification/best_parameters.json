@@ -1,0 +1,9 @@
+{
+  "net__epochs": 80,
+  "net__hidden": [
+    64,
+    32
+  ],
+  "net__lr": 0.01,
+  "net__optimizer": "adam"
+}

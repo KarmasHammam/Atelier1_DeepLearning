@@ -1,0 +1,9 @@
+test_classification_splits_and_augmentation (test_workflow.DataContracts.test_classification_splits_and_augmentation) ... ok
+test_posthoc_test_curve_cannot_change_model (test_workflow.DataContracts.test_posthoc_test_curve_cannot_change_model) ... ok
+test_regression_fit_clone_and_target_scaling (test_workflow.DataContracts.test_regression_fit_clone_and_target_scaling) ... ok
+test_temporal_target_and_purged_boundaries (test_workflow.DataContracts.test_temporal_target_and_purged_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.763s
+
+OK

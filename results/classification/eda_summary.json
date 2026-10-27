@@ -1,0 +1,15 @@
+{
+  "raw_rows": 10000,
+  "raw_columns": 10,
+  "exact_duplicates": 0,
+  "missing_values": 0,
+  "class_counts_train": {
+    "No Failure": 6756,
+    "Heat Dissipation Failure": 78,
+    "Power Failure": 67,
+    "Overstrain Failure": 55,
+    "Tool Wear Failure": 31,
+    "Random Failures": 13
+  },
+  "target_failure_type_disagreements": 27
+}

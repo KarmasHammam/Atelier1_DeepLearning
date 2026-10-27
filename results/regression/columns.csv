@@ -1,0 +1,8 @@
+,dtype
+date,datetime64[ns]
+symbol,object
+open,float64
+close,float64
+low,float64
+high,float64
+volume,int64
