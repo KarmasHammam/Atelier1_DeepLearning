@@ -232,15 +232,29 @@ modeste du F1 macro de validation ; les autres régularisations ne font pas mieu
 
 ## 7. Synthèse des apprentissages
 
-Cet atelier permet de comprendre la boucle PyTorch : préparer les tenseurs,
-calculer une prédiction, mesurer la loss, rétropropager et mettre à jour les poids.
-Il montre aussi que la qualité d'une expérience dépend de la séparation des données,
-du choix de la métrique et de la comparaison avec une référence simple.
-La normalisation facilite l'apprentissage ; le rééquilibrage aide à prendre en
-compte les classes rares ; la régularisation doit être évaluée, pas supposée utile.
+Cet atelier m'a permis de mieux comprendre comment construire et évaluer un
+réseau de neurones avec PyTorch. J'ai appris à distinguer la régression, qui
+prédit une valeur numérique, de la classification multiclasse, qui prédit une
+catégorie. J'ai aussi mieux compris les étapes de l'apprentissage : calculer
+les prédictions, mesurer l'erreur, calculer les gradients et mettre à jour les poids.
 
-**Pour la remise :** chaque étudiant doit compléter cette synthèse avec ses propres
-observations, les difficultés rencontrées et ce qu'il sait expliquer dans les notebooks.
+J'ai compris que la préparation des données est aussi importante que le choix du
+réseau. Pour les cours boursiers, il faut respecter l'ordre chronologique pour ne
+pas utiliser le futur pendant l'apprentissage. Pour les pannes, il faut tenir
+compte du déséquilibre des classes et appliquer le rééquilibrage uniquement sur
+les données d'entraînement.
+
+Les résultats m'ont montré qu'un bon score ne suffit pas à conclure qu'un modèle
+est performant. En régression, le réseau fait presque aussi bien que la méthode
+simple qui reprend le dernier cours connu. En classification, une accuracy élevée
+peut masquer une mauvaise détection des pannes rares. C'est pour cela que je
+regarde aussi le F1 macro, le rappel par classe et la matrice de confusion.
+
+Enfin, la comparaison des modèles m'a permis de comprendre que le Dropout, la
+régularisation L2 et l'arrêt anticipé n'améliorent pas automatiquement les résultats.
+Il faut vérifier leur effet sur la validation et garder le test pour l'évaluation
+finale. Ce que je retiens surtout de cet atelier, c'est qu'il faut expliquer les
+résultats et leurs limites, au lieu de chercher seulement le meilleur score.
 
 ## 8. Organisation et vérification
 

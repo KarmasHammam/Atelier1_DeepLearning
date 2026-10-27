@@ -226,8 +226,8 @@ display(pd.DataFrame(summary['reference']).T)
 - Vérifier l'effet réel des régularisations, sans supposer qu'elles améliorent tout.
 - Relier les conclusions aux effectifs et aux limites du jeu de données.
 
-Le README rassemble les résultats mesurés et les limites. La synthèse personnelle
-de l'étudiant doit être reformulée à partir de ce qu'il a compris et expérimenté.
+Le README rassemble les résultats mesurés et leurs limites. Ma synthèse
+personnelle se trouve dans la section 7 : « Synthèse des apprentissages ».
 """)]
     nb = nbf.v4.new_notebook(cells=cells)
     nb.metadata = {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
