@@ -1,0 +1,2 @@
+# Optionnel : uniquement pour générer le rapport PDF.
+reportlab==4.4.9

@@ -50,6 +50,8 @@ en français pour expliquer chaque étape.
 3. Consulter les résultats ci-dessous, puis refaire les expériences si nécessaire.
 
 Les notebooks ont des sorties enregistrées : ils se lisent directement sur GitHub.
+Un [rapport PDF détaillé](reports/Rapport_Atelier1_DeepLearning.pdf) explique aussi
+le projet de bout en bout, avec les graphiques, les métriques et leur interprétation.
 Les fonctions de `src/` contiennent l'implémentation partagée ; les notebooks en
 expliquent l'utilisation sans maintenir une deuxième version du code.
 
@@ -288,6 +290,7 @@ src/data.py            Sources, empreintes, nettoyage et partitions
 src/models.py          MLP, boucle PyTorch et adaptateurs scikit-learn
 src/experiments.py     EDA, GridSearchCV, régularisation, courbes et métriques
 scripts/               Installation, exécution des notebooks et mise à jour du rapport
+reports/               Rapport PDF détaillé
 tests/                 Contrôles des partitions et des pipelines
 results/regression/    Résultats complets de régression
 results/classification/ Résultats complets de classification
@@ -300,6 +303,13 @@ les cinq modèles. Les `history_*.csv` contiennent les courbes ; les `report_*.c
 contiennent les métriques de classification par classe sur train et test.
 Les `summary.json` enregistrent la graine, les versions et les sources.
 Les modèles binaires et les données brutes ne sont pas committés.
+
+Pour régénérer le PDF à partir des résultats enregistrés :
+
+```bash
+python -m pip install -r requirements-report.txt
+python scripts/generate_report.py
+```
 
 Validation réalisée : **54 ajustements de validation croisée**, dix modèles finaux,
 quatre tests automatiques et exécution des deux notebooks. Les scores ci-dessus
