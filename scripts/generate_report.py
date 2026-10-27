@@ -73,7 +73,7 @@ class Report(BaseDocTemplate):
     def __init__(self, filename):
         super().__init__(str(filename), pagesize=A4, leftMargin=MARGIN, rightMargin=MARGIN,
                          topMargin=47, bottomMargin=47, title='Atelier 1 — Deep Learning avec PyTorch',
-                         author='Karmas Hamam', subject='Régression NYSE et classification multiclasse de maintenance')
+                         author='KARMAS Hammam', subject='Régression NYSE et classification multiclasse de maintenance')
         frame = Frame(MARGIN, 47, WIDTH, H - 94, id='normal', leftPadding=0, rightPadding=0,
                       topPadding=0, bottomPadding=0)
         self.addPageTemplates(PageTemplate(id='report', frames=frame, onPage=self.decorate))
@@ -88,7 +88,7 @@ class Report(BaseDocTemplate):
         canvas.setFont(BODY, 7)
         canvas.setFillColor(GRAY)
         canvas.drawString(MARGIN, H - 22, 'ATELIER 1 · DEEP LEARNING · MASTER MBD')
-        canvas.drawString(MARGIN, 28, 'Karmas Hamam · Rapport des expériences PyTorch')
+        canvas.drawString(MARGIN, 28, 'KARMAS Hammam · Rapport des expériences PyTorch')
         canvas.drawRightString(W - MARGIN, 28, str(doc.page))
         canvas.restoreState()
 
@@ -178,7 +178,7 @@ def main():
                   P('Faculté des Sciences et Techniques de Tanger<br/>Département Génie Informatique<br/>Master MBD', 'CoverText'),
                   Spacer(1, 42), P('Atelier 1<br/>Deep Learning avec PyTorch', 'CoverTitle'),
                   P('Régression boursière et classification<br/>multiclasse des pannes', 'CoverText'),
-                  Spacer(1, 35), P('Réalisé par <b>Karmas Hamam</b><br/>Enseignant : Pr. Lotfi Elaachak', 'CoverText'),
+                  Spacer(1, 35), P('Réalisé par <b>KARMAS Hammam</b><br/>Enseignant : Pr. Lotfi Elaachak', 'CoverText'),
                   Spacer(1, 30), P('Rapport détaillé : données, méthode, implémentation,<br/>résultats, interprétation et reproduction', 'CoverText'),
                   Spacer(1, 22), P('Les résultats présentés proviennent des expériences complètes enregistrées dans le dépôt. Aucun résultat supplémentaire n’est supposé.', 'Caption')])
 
